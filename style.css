@@ -20,12 +20,18 @@ a{
     padding-bottom: 1px;
 }
 
-a:hover{
+a:hover, a:focus{
     background-color: goldenrod;
 }
 a:active{
     background-color: goldenrod;
 }
 
+@media (hover : hover) {
+    a:hover {
+        background-color: red;
+        color: white;
+    }
+}
 
 
