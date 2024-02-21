@@ -24,13 +24,12 @@ a:hover, a:focus{
     background-color: goldenrod;
 }
 a:active{
-    background-color: goldenrod;
+    background-color: rgb(204, 36, 36);
 }
 
 @media (hover : hover) {
     a:hover {
-        background-color: red;
-        color: white;
+        background-color: goldenrod;
     }
 }
 
