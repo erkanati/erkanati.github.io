@@ -15,22 +15,3 @@ body{
     background-color: #3a3a8f;
     color: white;
 }
-
-.counter-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px 50px;
-    text-align: center;
-}
-
-.counter{
-    font-size: 60px;
-    margin-top: 10px;
-}
-
-@media(max-width: 580px){
-    body{
-        flex-direction: column;
-    }
-}
