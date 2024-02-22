@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:wght@300..700&display=swap');
 
 :root{
-    --primary-color: #22253e;
-    --secondary-color: #373b69;
+    --primary-color: #171616;
+    --secondary-color: #373537;
 
 }
 
@@ -20,8 +20,39 @@ body{
 header{
     padding: 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: var(--secondary-color);
+}
+
+ul{
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0 2rem;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul li{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#next:hover, #next:focus{
+    color: #7378c5;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+}
+li a{
+    text-decoration: none;
+    color:white
+}
+li a:hover, li a:focus{
+    color: #7378c5;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
 }
 
 .search{
@@ -73,6 +104,8 @@ main{
 
 .movie-info h3{
     margin-top: 0;
+    padding: 0;
+    
 }
 
 .movie-info span{
