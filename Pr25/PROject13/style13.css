@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code:wght@300..700&display=swap');
 
 :root{
-    --primary-color: #22254b;
+    --primary-color: #22253e;
     --secondary-color: #373b69;
 
 }
@@ -24,7 +24,7 @@ header{
     background-color: var(--secondary-color);
 }
 
-.seacrh{
+.search{
     background-color: transparent;
     border: 2px solid var(--primary-color);
     border-radius: 50px;
@@ -78,7 +78,7 @@ main{
 .movie-info span{
     background-color: var(--primary-color);
     padding: 0.25rem 0.5rem;
-    border-radius: 3px;
+    border-radius: 10px;
     font-weight: bold;
 }
 
