@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:wght@300..700&display=swap');
+
+:root{
+    --green: rgb(85, 169, 85);
+}
+*{
+    box-sizing: border-box;
+} 
+
+body{
+    font-family: 'Fira Code', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #000;
+
+    color: white;
+}
+
+button{
+    background-color: var(--green);
+    color: white;
+    border: 1px var(--green) solid;
+    font-size: 15px;
+    text-decoration: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    overflow: hidden;
+    margin: 10px 0;
+    position: relative; 
+    border-radius: 10px;
+}
+
+buttom:focus{
+    outline:0;
+}
+
+button .circle{
+    position: absolute;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale .5s ease-out;
+}
+
+@keyframes scale{
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
