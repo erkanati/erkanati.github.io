@@ -11,9 +11,8 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
-    background-color: rgb(105, 61, 125);
+    background-color: var(--secondary-color);
 
     color: white;
 }
@@ -28,9 +27,9 @@ body{
 }
 
 .fill{
-    background-image: url('https://source.unsplash.com/random/155x155');
-    height: 150px;
-    width: 150px;
+    background-image: url('https://source.unsplash.com/random/150x150');
+    height: 145px;
+    width: 145px;
     cursor: pointer;
 
 }
@@ -46,6 +45,36 @@ body{
     border-style: dashed;
 }
 
+:root{
+    --primary-color: #000;
+    --secondary-color: #734e87;
+
+}
+
+html{
+    transition: all 0.5s ease-in;
+}
+
+html.dark{
+    --primary-color: #fff;
+    --secondary-color: #334;
+}
+
+html.dark{
+    background-color: #111;
+    color: var(--primary-color);
+}
+
+.toggle{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
 
 @media(max-width: 800px){
     body{
