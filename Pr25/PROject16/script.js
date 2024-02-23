@@ -2,14 +2,18 @@ const buttons = document.querySelectorAll('.pression')
 
 buttons.forEach(button => {
     button.addEventListener('click', function(event){
-        const x = event.clientX
-        const y = event.clientY
+        const x = event.clientX //thing of whole window pixel by x and y
+        const y = event.clientY 
 
-        const buttonTop = event.target.offsetTop
+        const buttonTop = event.target.offsetTop //const thing
         const buttonLeft = event.target.offsetLeft
 
         const xInside = x - buttonLeft
         const yInside = y - buttonTop
+
+        console.log("x:", x, "y:", y)
+        console.log(buttonLeft) //403
+        console.log(xInside)
 
         const circle = document.createElement('span')
         circle.classList.add('circle')
