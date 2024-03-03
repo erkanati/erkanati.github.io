@@ -25,6 +25,12 @@ div{
 
 }
 
+.text{
+    max-width: 700px;
+    margin: auto 40px;
+    padding: auto 40px;
+}
+
 input{
     width: 50px;
     padding: 5px;
@@ -52,7 +58,7 @@ input:focus{
     border-radius: 10px;
     margin-bottom: 1rem;
     max-width: 700px;
-
+    font-family: inherit;
 }
 
 #yourText::placeholder{
@@ -71,3 +77,5 @@ button{
     border-radius: 15px;
     margin: 0.5rem auto;
 }
+
+
