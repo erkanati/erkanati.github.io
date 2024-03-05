@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:wght@300..700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fira Code', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0.5rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin: 5px;
+    text-transform: uppercase;
+
+}
+
+.counter{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.counter.hide{
+    transform: translate(-50%, -50%) scale(0);
+    animation: hidden 0.2s ease-out;
+
+}
+
+@keyframes hidden{
+    0%{
+        transform: translate(-50%, 50%) scale(1);
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+.final{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-align: center;
+}
+
+.final.show{
+    transform: translate(-50%, -50%) scale(1);
+    animation: showing 0.3s ease-out;
+}
+
+@keyframes showing{
+    0%{
+        transform: translate(-50%, 50%) scale(0);
+    }
+    30%{
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+#replay{
+    background-color: #3498db;
+    border-radius: 9px;
+    border: none;
+    color: aliceblue;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  #replay span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  #replay span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #replay:hover span{
+    padding-right: 25px;
+  }
+  
+  #replay:hover span:after{
+    opacity: 1;
+    right: 0;
+  }
+
+
+.nums{
+    color: red;
+    font-size: 3rem;
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 3rem;
+}
+
+.nums span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(125deg);
+    transform-origin: bottom center;
+
+
+}
+
+.nums span.in{
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: justIn 0.5s ease-in-out;
+}
+
+.nums span.out{
+    animation: justOut 0.5s ease-in-out;
+}
+
+@keyframes justIn{
+    0%{
+        transform: translate(-50%, -50%) rotate(125deg);
+    }
+
+    30%{
+        transform: translate(-50%, -50%) rotate(-20deg);
+    }
+
+    60%{
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes justOut{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    60%{
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(-125deg);
+    }
+}
