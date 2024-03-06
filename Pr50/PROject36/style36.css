@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:wght@300..700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fira Code', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+}
+
+.container{
+    background-color: bisque;
+    width: 400px;
+    max-width: 100%;
+}
