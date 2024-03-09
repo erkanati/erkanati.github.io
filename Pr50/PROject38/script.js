@@ -30,3 +30,17 @@ function removeColor(element){
 function getRandomcolor(){
     return colors[Math.floor(Math.random() * colors.length)]
 }
+
+for(i=0; i<=colors.length; i++){
+    const justSquare = document.createElement('div') //creates div
+    justSquare.classList.add('justSquare') //adds class to div
+    justSetColor(justSquare, colors[i]) //function justSetColor fill divs with colors WOW
+    container.appendChild(justSquare)
+}
+
+function justSetColor(el, col){
+    el.style.background = col
+    el.style.boxShadow = `0 0 2px ${col}, 0 0 10px ${col}`
+    console.log(col)
+}
+
