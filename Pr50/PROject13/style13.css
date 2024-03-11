@@ -74,6 +74,10 @@ li a:hover, li a:focus{
     background-color: var(--primary-color);
 }
 
+.main{
+    justify-content: center;
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -141,4 +145,47 @@ main{
 
 .movie:hover .overview{
     transform: translateY(0);
+}
+
+@media(max-width: 990px){
+    .main{
+        align-items: center;
+    }
+    .movie{
+        flex-basis: 45%;
+    }
+}
+
+@media(max-width: 637px){
+    .movie{
+        flex-basis: 89%;
+        
+    }
+    .main{
+        align-items: center;
+    }
+}
+
+@media(1000px < width < 1320px){
+    .main{
+        align-items: center;
+    }
+    .movie{
+        flex-basis: 30%;
+    }
+}
+
+@media(1321px < width < 1639px){
+    .main{
+        align-items: center;
+    }
+    .movie{
+        flex-basis: 22%;
+    }
+}
+
+@media(min-width: 630px){
+    .main{
+        padding: 0.5rem;
+    }
 }
