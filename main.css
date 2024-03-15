@@ -69,8 +69,9 @@ li{
     font-size: calc(20px + 16*((100vw - 300px)/ 1280))
 }
 
-.boards:hover{
-    background: linear-gradient(#ff0000c0, #36171580);
+.boards:hover, .range:hover{
+    background: linear-gradient(320deg, #ff000078 , #3734aa64 );
+    color: rgba(233, 194, 3);
 }
 
 @media (min-width:800px){
