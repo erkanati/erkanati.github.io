@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Coursera</title>
+</head>
+<body>
+    <h1>Modules Example</h1>
+
+
+    <script type="module">
+        import {informalGreeting} from './greetings.js';
+        informalgreeting('Eren')
+    </script>
+    
+    <script type="module">
+        import {informalGreeting, formalGreeting} from './greetings.js';
+        import greeting from './greetings.js';
+        formalGreeting('Erkanat')
+        greeting()
+    </script>
+
+</body>
+</html>
