@@ -4,7 +4,7 @@
 //window.function = global CAN OVERWRITE local function
 //ServerJS => CommonJS (node.js)
 
-``
+console.log("Hi!!!")
 
 
 
