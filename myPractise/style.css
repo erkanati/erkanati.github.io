@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.myred{
+    background-color: black;
+    color: white;
+    outline:0;
+}
+
+.myred.wow{
+    background-color:red;
+    /* transition: ease-out 1s; */
+    outline: none;
+}
