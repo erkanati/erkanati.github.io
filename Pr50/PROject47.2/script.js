@@ -29,7 +29,7 @@ async function getWords(){
 
 
 
-let index = 1
+let index = 0
 
 function update(){
     getWords().then(dataList => {
