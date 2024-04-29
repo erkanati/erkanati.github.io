@@ -20,15 +20,15 @@
 
 @media (max-width: 250px){
   #conic {
-    width: 150px; /* Adjust the width of the circle */
-    height: 150px; /* Adjust the height of the circle */
+    width: 100px; /* Adjust the width of the circle */
+    height: 100px; /* Adjust the height of the circle */
 }
 
 #timer {
-    font-size: 3rem; /* Adjust the font size of the timer */
+    font-size: 2rem; /* Adjust the font size of the timer */
 }
 
 .hand {
-    height: 75px; /* Adjust the height of the hand/marker */
+    height: 55px; /* Adjust the height of the hand/marker */
 }
 }
