@@ -59,7 +59,7 @@ body{
 
 .seat:nth-last-of-type(2){
     margin-left: 18px; 
-}
+} 
 
 .seat:not(.occupied):hover{
     cursor: pointer;
