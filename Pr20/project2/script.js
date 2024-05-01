@@ -28,3 +28,5 @@ container.addEventListener('click', function(event){
         updateSelectedCount()
     }
 })
+
+const mymood = 'Actually great! Because I added all of courses list into Notion for tracking and analyzing'
