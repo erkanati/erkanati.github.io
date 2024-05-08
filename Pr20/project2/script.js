@@ -86,3 +86,5 @@ updateSelectedCount()
 
 
 const git_update = "Finally I've learned git add. git commit git pull git push" 
+
+const myversion = 'Already created my own version as collaborator!'
