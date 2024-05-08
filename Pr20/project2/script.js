@@ -89,3 +89,4 @@ const git_update = "Finally I've learned git add. git commit git pull git push"
 
 const myversion = 'Already created my own version as collaborator!'
 const myupdate = "My update commit version"
+const checkPullRequest = 'Check Pull Request!'
