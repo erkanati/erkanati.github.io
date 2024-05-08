@@ -83,3 +83,6 @@ const mymood = 'Actually great! Because I added all of courses list into Notion 
 
 //initial count and total set
 updateSelectedCount()
+
+
+const git_update = "Finally I've learned git add. git commit git pull git push" 
