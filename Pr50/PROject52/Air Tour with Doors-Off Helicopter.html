@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Buttons</title>
+    <link rel="stylesheet" href="https://fh-kit.com/buttons/v2/?color=ff6000" type="text/css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+
+        body::-webkit-scrollbar {
+            display: none; 
+        }
+
+        body{
+            scrollbar-width: none; 
+            -ms-overflow-style: none;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Assistant, sans-serif;
+            overflow: auto;
+            scrollbar-width: none; 
+        }
+
+        
+
+        #content-container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #fh-image-button-container {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            align-items: flex-start;
+        }
+
+        #fh-image-button-container .image-button {
+            display: -webkit-box;
+            display: flex;
+            height: 100%;
+            position: relative;
+            -webkit-box-orient: vertical;
+            
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-pack: end;
+            justify-content: center;
+            box-sizing: border-box;
+            margin: 10px 0 0 0;
+            border-radius: 11px;
+            overflow: hidden;
+            text-decoration: none;
+            -webkit-transition: all 200ms ease;
+            transition: all 200ms ease;
+            
+        }
+        img{
+            width: 100%;
+        }
+
+        #fh-image-button-container .image-button.-half {
+            flex-basis: 48% !important;
+        }
+
+        /* #fh-image-button-container .image-button.-third {
+            flex-basis: 31.3% !important;
+        } */
+
+        /* #fh-image-button-container .image-button.-twothirds {
+            flex-basis: 64.6666666667%;
+        } */
+
+        #fh-image-button-container .image-button.-full {
+            flex-basis: 100%;
+        }
+
+        @media only screen and (max-width: 940px) {
+            #fh-image-button-container .image-button.-third {
+                flex-basis: 48% !important;
+            }
+
+            #fh-image-button-container .image-button.-twothirds {
+                flex-basis: 48% !important;
+            }
+        }
+
+        .bgimage {
+            display: flex;
+            filter: brightness(100%);
+            transition: filter 200ms ease;
+        }
+
+        
+
+        @media only screen and (max-width: 800px) {
+            
+        }
+
+
+        #fh-image-button-container .image-button:hover {
+            box-shadow: 0 4px 16px -1px rgba(0, 0, 0, 0.6);
+        }
+
+        #fh-image-button-container .badge {
+            position: absolute;
+            top: 0.5em;
+            right: 0.5em;
+            display: inline-block;
+            padding: 0;
+            font-size: 0.6em;
+            color: white;
+            border-radius: 5px;
+        }
+
+
+        @media (min-width: 300px) and (max-width: 500px) {
+            
+
+            #fh-image-button-container .image-button {
+                margin: 20px 0 0 0;
+            }
+            #fh-image-button-container .image-button.-third {
+                flex-basis: 99% !important;
+            }
+
+            #fh-image-button-container .image-button.-half {
+                flex-basis: 99% !important;
+            }
+
+            #fh-image-button-container .image-button.-twothirds {
+                flex-basis: 99% !important;
+            }
+
+            
+            }
+
+    ::-webkit-scrollbar {
+        width: 12px; /* For vertical scrollbar */
+        height: 12px; /* For horizontal scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+    background-color: transparent; /* You can use white or transparent here */
+    }
+
+    ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    }
+
+    html {
+    scrollbar-width: thin; /* Options: auto, thin */
+    scrollbar-color: white transparent; /* White thumb, transparent track */
+    }
+
+    .big{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom:30px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+            max-height: 100%;
+            align-self: start;
+            max-width: 100%;
+            border-radius: 5px;
+            padding-top: 0;
+            margin-top: 0;
+            cursor: pointer;
+        }
+
+        .but{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            background-color: #fdca0a;
+            border:0;
+            height: 55px;
+            width: 100%;
+            align-items: center;
+            border-radius: 8px;
+            text-decoration: none;
+            color:black;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+        .head{
+            margin:0;
+            padding: 12px 0 5px 0;
+            font-size: 21px;
+
+        }
+        p{
+            margin: 5px 0 0 0;
+            font-size: 17px;
+        }
+
+        .btn:hover{
+            background-color: #fdc80aa9;
+            color:rgba(0, 0, 0, 0.543);
+        }
+
+        .icon{
+            width: 23px;
+            height: 29px;
+            padding: 0 7px 0 5px;
+            position: relative;
+            top: 3px;
+        }
+
+        .main-head{
+            display: flex;
+            flex-direction: column;
+            margin: -10px 0 0 0;
+            padding: 0;
+            color: black;
+            letter-spacing: 0.5px;
+            box-sizing: border-box;
+        }
+        .address{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            
+        }
+        .address-text{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .text{
+            font-family: Assistant;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+        }
+        .text-about{
+            text-align: left;
+        }
+
+        .schedule-heading{
+            font-size: 28px;
+            padding: 0;
+            margin: 20px 0 0 0;
+
+        }
+        .schedule-time{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+
+        .schedule-name{
+            font-size: 24px;
+            padding: 5px 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+        .time-blue{
+            color: #0d9bae;
+            padding: 0 5px 0 0;
+        }
+
+        .big{
+            margin: 20px 0 0 0;
+            padding: 0;
+        }
+
+        .popular-packages{
+            margin: 40px 0 0 0;
+            padding: 0;
+        }
+
+        .only-packages{
+            margin: 30px 0 0 0;
+            padding: 0;
+        }
+
+        .parking{
+            margin: 20px 0 0 0;
+            padding: 0;
+        }
+
+        .head-pop-pack{
+            margin: 0;
+            padding: 0;
+            font-size: 28px;
+        }
+
+        .free{
+            color: #2b9008;
+            font-weight: 700;
+        }
+        .cost-color{
+            color: #fe5b00;
+            font-weight: 700;
+        }
+
+        .seating-chart{
+            margin: 40px 0 0 0;
+            padding: 0;
+        }
+
+        .seating-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 0 0 0;
+            padding: 0;
+            width: 98%;
+        }
+
+        .text-seat{
+            padding: 0 0 0 0px;
+        }
+
+        .offer{
+            font-size: 20px;
+            padding: 0;
+            font-weight: 400;
+        }
+
+        .static-cancel{
+            margin: 20px 0 40px 0;
+            padding: 0;
+            display: inline-block;
+            height: max-content;
+            display: flex;
+        }
+
+        .cancel-up{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: start;
+            margin: 0;
+            padding: 5px;
+            background-color: #EEF8FA;
+            border-radius: 9px;
+            
+            
+        }
+
+        .cancel-text{
+            padding: 0 5px 0 5px;
+            margin:0;
+            line-height: 27px;
+
+        }
+
+        .ico-cancel{
+            width: 24px;
+            height: 24px;
+            padding: 0 5px 0 5px;
+            position: relative;
+            bottom: -1px
+        }
+
+        @media (min-width: 400px) and (max-width: 940px) {
+            .sct{
+                display: grid;
+            }
+            .sct1{
+                grid-area: 1/1/2/2;
+            }
+            .sct2{
+                grid-area: 1/2/2/3;
+            }
+            
+        }
+             
+
+
+        @media (min-width: 551px) and (max-width: 700px) {
+            .big {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-start;
+                
+            }
+
+            .container {
+                width: 90%;
+                justify-content: space-between;
+                max-width: 100%;
+                margin-top: 0;
+                padding-top: 0;
+                position: relative;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            .btn{
+                width: 100%;
+                font-size: 17px;
+            }
+            img{
+                padding-top: 0;
+                margin-top: 0;
+                position: relative;
+                
+            }
+            .head{
+            margin:0;
+            padding: 15 0 15 0;
+            
+            }
+            .seating-container{
+                flex-direction: row;
+            }
+            .text-seat{
+            padding: 0 0 0 10px;
+        }
+        .sct{
+            display: grid;
+        }
+        .sct1{
+            grid-area: 1/1/2/2;
+        }
+        .sct2{
+            grid-area: 1/2/2/3;
+        }
+            
+        }
+
+        @media (min-width: 701px) and (max-width: 900px){
+            .big {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            /* .container {
+                width: 32%;
+                max-width: 100%;
+                align-items: flex-start;
+                justify-content: flex-start;
+            } */
+            .btn{
+                width: 100%;
+                font-size: 17px;
+            }
+            .button{
+                display: flex;
+                justify-content: center;
+            }
+
+            img{
+                padding-top: 0;
+                margin-top: 0;
+                position: relative;
+                align-items: flex-start;
+            }
+            .head{
+                padding: 12px 0 0 0;
+                font-size: 24px;
+            }
+            p{
+                font-size: 16px;
+            }
+
+            .seating-container{
+                flex-direction: row;
+            }
+            .text-seat{
+            padding: 0 0 0 10px;
+        }
+        .sct{
+            display: grid;
+        }
+        .sct1{
+            grid-area: 1/1/2/2;
+        }
+        .sct2{
+            grid-area: 1/2/2/3;
+        }
+        }
+        @media (min-width: 901px){
+            .big {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            /* .container {
+                width: 32%;
+                max-width: 100%;
+                align-items: flex-start;
+                justify-content: space-between;
+            } */
+            .button{
+                width: 100%;
+                
+            }
+            .btn{
+                width: 100%;
+                justify-content: center;
+                font-size: 17px;
+                font-weight: 600;
+            }
+            .head{
+                font-size: 24px;
+            }
+
+            .seating-container{
+                flex-direction: row;
+            }
+
+            .text-seat{
+            padding: 0 0 0 10px;
+        }
+        .sct{
+            display: grid;
+        }
+        .sct1{
+            grid-area: 1/1/2/2;
+        }
+        .sct2{
+            grid-area: 1/2/2/3;
+        }
+            
+        }
+
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main-head">
+        <div class="address">
+            <div class="ico"><img class="icon" src="https://static.wixstatic.com/shapes/b0694c_56944abc8aa44575a758c28efe5120df.svg" alt="icon.svg"></div>
+            
+            <div class="address-text">
+                <h5>P.O. Box 71, Lihue, Hawaii 96766, Lihue Airport
+                   
+                   
+                   
+                   </h5> 
+            </div>
+               
+        </div>
+
+       <!-- ABOUT TEXT -->
+        <div class="text">
+            <h2 style="margin: 0; padding:0;">Air Tour with Doors-Off Helicopter </h2>
+            <p><strong>Most Popular!</strong> Experience Kauai's stunning landscapes from the sky!</p>
+            <p>Prepare for an unforgettable adventure as you take off from Lihue Airport and soar over some of Kauai's most breathtaking sights:</p>
+            <ul>
+                <li>Bali Ha’i</li>
+                <li>Hanalei Bay</li>
+                <li>Hanapepe (Jurassic Falls)</li>
+                <li>Kipu Kai</li>
+                <li>Nā Pali Coast</li>
+                <li>Waialeale Crater (The Weeping Wall)</li>
+                <li>Wailua Falls</li>
+                <li>Waimea Canyon</li>
+            </ul>
+
+            <h3>✨ What’s Included?</h3>
+            <ul>
+                <li>Doors-off flight for unparalleled views!</li>
+                <li>Hughes 500 helicopter - Maximum of 4 guests with all window seats.</li>
+            </ul>
+
+            <h3>🌄 Tour Highlights</h3>
+            <p>The <strong>DOORS-OFF ADVENTURE</strong> will take you over Kauai’s lush landscapes, offering breathtaking views:</p>
+            <ul>
+                <li>🌿 <strong>Bali Hai:</strong> Witness the iconic Makana Mountain at the start of the Na Pali Coast.</li>
+                <li>💧 <strong>Manawaiopuna Falls:</strong> Soar above the famous "Jurassic Falls," known from the movie Jurassic Park.</li>
+                <li>🏖️ <strong>Kipu Kai Beach:</strong> View this exclusive beach, only accessible by water.</li>
+                <li>🌊 <strong>Hanalei Bay:</strong> Admire the two-mile stretch of beach backed by towering emerald mountains.</li>
+                <li>☔ <strong>Waialeale Crater:</strong> Experience one of the wettest places on Earth, surrounded by enchanting waterfalls.</li>
+                <li>🌈 <strong>Wailua Falls & Waimea Canyon:</strong> Marvel at these famous aerial sights on your VIP Tour.</li>
+            </ul>
+
+            <h3>🎉 Book Your Adventure Today!</h3>
+            <p><em>Spaces are limited for this exclusive tour. Secure your seat now to experience the beauty and mystery of Kauai like never before!</em></p>
+
+            
+
+        </div>
+
+
+        <div class="schedule">
+            <h2 class="schedule-heading">Schedule</h2>
+            
+            <div class="sct">
+                <div class="sct1">
+                    <p class="schedule-name">Morning Tour #1</p>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">8:15 am:</p>
+                        <p class="action-time">Check-In</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">8:30 am:</p>
+                        <p class="action-time">Start</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">9:25 am:</p>
+                        <p class="action-time">End Time</p>
+                    </div>
+                </div>
+                <div class="sct2">
+                    <p class="schedule-name">Afternoon Tour #1</p>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">12:00 pm:</p>
+                        <p class="action-time">Check-In</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">12:15 pm:</p>
+                        <p class="action-time">Start</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">1:10 pm:</p>
+                        <p class="action-time">End Time</p>
+                    </div>
+                </div>
+                
+                <div class="sct3">
+                    <p class="schedule-name">Morning Tour #2</p>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">9:30 am:</p>
+                        <p class="action-time">Check-In</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">9:45 am:</p>
+                        <p class="action-time">Start</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">10:40 am:</p>
+                        <p class="action-time">End Time</p>
+                    </div>
+                </div>
+
+                <div class="sct4">
+                    <p class="schedule-name">Afternoon Tour #2</p>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">1:45 pm:</p>
+                        <p class="action-time">Check-In</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">2:00 pm:</p>
+                        <p class="action-time">Start</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">2:55 pm:</p>
+                        <p class="action-time">End Time</p>
+                    </div>
+                </div>
+                
+                <div class="sct5">
+                    <p class="schedule-name">Morning Tour #3</p>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">10:45 am:</p>
+                        <p class="action-time">Check-In</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">11:00 am:</p>
+                        <p class="action-time">Start</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">11:55 am:</p>
+                        <p class="action-time">End Time</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                <div class="sct6">
+                    <p class="schedule-name">Afternoon Tour #3</p>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">3:00 pm:</p>
+                        <p class="action-time">Check-In</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">3:15 pm:</p>
+                        <p class="action-time">Start</p>
+                    </div>
+                
+                    <div class="schedule-time 1">
+                        <p class="time-blue">4:10 pm:</p>
+                        <p class="action-time">End Time</p>
+                    </div>
+                </div>
+                
+                
+
+        </div>
+
+    </div>
+
+
+    <div class="popular-packages">
+        <h2 class="head-pop-pack">Most Popular Packages</h2>
+    </div>
+<div class="big">
+    <div id="content-container">
+        <div id="fh-image-button-container"> 
+         
+        <!--Panel 1--> 
+        <div class="image-button -third -tall panel" target="_blank"><a class="imgLink" href="https://fareharbor.com/embeds/book/napaliexplorer/items/1652/?asn=fhdn&amp;asn-ref=inhawaii&amp;full-items=yes&amp;flow=no&amp;branding=no&amp;bookable-only=yes&amp;ref=inhawaii&amp;back=https://www.inhawaii.com/kauai/na-pali-coast-scenic-tour"><span class="bgimage" style="background-image:url(https://airborneaviationtours.com/wp-content/uploads/2023/10/Waimea-and-Olokele-Canyons-560x355.jpg)"></span></a><span class="tour-info"><span class="title">Air Tour with Doors-Off Helicopter Open-Seat</span><br/><span class="subtitle">$319 Open Seating (Ages 10 and up)</span></span><a class="fh-button-true-flat-color fh-size--small book-btn" href="https://fareharbor.com/embeds/book/napaliexplorer/items/1652/?asn=fhdn&amp;asn-ref=inhawaii&amp;full-items=yes&amp;flow=no&amp;branding=no&amp;bookable-only=yes&amp;ref=inhawaii&amp;back=https://www.inhawaii.com/kauai/na-pali-coast-scenic-tour">Book Now</a></div>
+         
+        <!--Panel 2--> 
+        <div class="image-button -third -tall panel" target="_blank"><a class="imgLink" href="https://fareharbor.com/embeds/book/napaliexplorer/items/1652/?asn=fhdn&amp;asn-ref=inhawaii&amp;full-items=yes&amp;flow=no&amp;branding=no&amp;bookable-only=yes&amp;ref=inhawaii&amp;back=https://www.inhawaii.com/kauai/na-pali-coast-scenic-tour"><span class="bgimage" style="background-image:url(https://cdn.filestackcontent.com/PI1ccPAZT74NMANiTnyA/convert?cache=true&amp;compress=true&amp;quality=90&amp;w=1000&amp;fit=max)"></span></a><span class="tour-info"><span class="title">Air Tour with Doors-Off Helicopter Open-Seat</span><br/><span class="subtitle">$359 Front Seat Upgrade (Ages 10 and up)</span></span><a class="fh-button-true-flat-color fh-size--small book-btn" href="https://fareharbor.com/embeds/book/napaliexplorer/items/1652/?asn=fhdn&amp;asn-ref=inhawaii&amp;full-items=yes&amp;flow=no&amp;branding=no&amp;bookable-only=yes&amp;ref=inhawaii&amp;back=https://www.inhawaii.com/kauai/na-pali-coast-scenic-tour">Book Now</a></div>
+         
+        <!--Panel 3--> 
+        <div class="image-button -third -tall panel" target="_blank"><a class="imgLink" href="https://fareharbor.com/embeds/book/napaliexplorer/items/1652/?asn=fhdn&amp;asn-ref=inhawaii&amp;full-items=yes&amp;flow=no&amp;branding=no&amp;bookable-only=yes&amp;ref=inhawaii&amp;back=https://www.inhawaii.com/kauai/na-pali-coast-scenic-tour"><span class="bgimage" style="background-image:url(https://airborneaviationtours.com/wp-content/uploads/2023/09/Passengers-and-Pilot-560x355.jpg)"></span></a><span class="tour-info"><span class="title">Private Air Tour with Doors-Off Helicopter </span><br/><span class="subtitle">$1276 Private Options, up to 4 guests</span></span><a class="fh-button-true-flat-color fh-size--small book-btn" href="https://fareharbor.com/embeds/book/napaliexplorer/items/1652/?asn=fhdn&amp;asn-ref=inhawaii&amp;full-items=yes&amp;flow=no&amp;branding=no&amp;bookable-only=yes&amp;ref=inhawaii&amp;back=https://www.inhawaii.com/kauai/na-pali-coast-scenic-tour">Book Now</a></div>
+         
+         
+         </div> 
+         </div> 
+         
+         <!--The Following is necessary CSS code to format embed -->
+          <script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
+         <style> #content-container { min-height: 160px; width: 100%; margin-top: 0; } #fh-image-button-container { display: -webkit-box;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; flex-direction: row; flex-wrap: wrap; -webkit-box-pack: justify; justify-content: space-between; font-size: 20px; margin: 0; align-items: flex-start; } #fh-image-button-container .image-button { display: -webkit-box; display: flex;position: relative; -webkit-box-orient: vertical; -webkit-box-direction: normal; flex-direction: column; -webkit-box-pack: end; justify-content: center; box-sizing: border-box; margin: 10px 0 0 0; background-position: 50% 50%; background-repeat: no-repeat; border-radius: 15px; background-size: cover; overflow: hidden; text-decoration: none; -webkit-transition: all 200ms ease; transition: all 200ms ease; } /* fall back widths */ #fh-image-button-container .image-button.-half { flex-basis: 48% !important; } #fh-image-button-container .image-button.-third { flex-basis: 31.3% !important; } #fh-image-button-container .image-button.-twothirds { flex-basis: 64.6666666667%; } #fh-image-button-container .image-button.-full { flex-basis: 100%; } @media only screen and (max-width: 800px) { #fh-image-button-container .image-button.-third { flex-basis: 48% !important; } #fh-image-button-container .image-button.-twothirds { flex-basis: 48% !important; } } .bgimage { display: flex; background-position: center center; background-size: cover; min-height: 10em; filter: brightness(90%); transition: filter 200ms ease; } .image-button:hover > a > span { filter: brightness(110%); } @media only screen and (max-width: 1000px) { .bgimage { min-height: 8em; } } .fh-button-true-flat-color.fh-size--small { border-radius: 5px !important; font-size: 15px !important; margin: 0% 3.5% 15px 3.5% !important; } #fh-image-button-container .image-button:hover { box-shadow: 0 4px 16px -1px rgba(0, 0, 0, 0.6); } #fh-image-button-container .badge { position: absolute; top: 0.5em; right: 0.5em; display: inline-block; padding: 0.5em 1em; font-size: 0.6em; color: white; border-radius: 5px; } #fh-image-button-container .tour-info { color: black; line-height: 1em !important; font-size: 1em; padding: 20px 15px !important; text-decoration: none; font-weight: bold; font-family: sans-serif; } .title { flex-basis: 100%; line-height: 1.3; font-size: 20px !important; } .subtitle { flex-basis: 100%; line-height: 1.2; font-size: 15px !important; } @media (max-width: 500px) { #fh-image-button-container .book-btn { bottom: 0; right: 0; left: 0; box-sizing: border-box; } #fh-image-button-container .image-button.-third { flex-basis: 99% !important; } #fh-image-button-container .image-button.-half{ flex-basis: 99% !important; } #fh-image-button-container .image-button.-twothirds{ flex-basis: 99% !important; } .bgimage { min-height: 10em; } } #fh-image-button-container .tour-info span { font-size: 0.7em; font-weight: normal; text-decoration: none; } </style>
+<!-- External JS -->
+
+<script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
+<script>// External script for FareHarbor lightbox
+    var fareharborScript = document.createElement('script');
+    fareharborScript.src = "https://fareharbor.com/embeds/api/v1/?autolightframe=yes";
+    document.body.appendChild(fareharborScript);
+    </script>
+
+</body>
+</html>
