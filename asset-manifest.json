@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ourportfolio/static/css/main.f4cbb221.css",
+    "main.js": "/ourportfolio/static/js/main.b7c73b9c.js",
+    "static/media/DevSecOps_Pipeline.png": "/ourportfolio/static/media/DevSecOps_Pipeline.1a8e4cb2d163e2142866.png",
+    "index.html": "/ourportfolio/index.html",
+    "main.f4cbb221.css.map": "/ourportfolio/static/css/main.f4cbb221.css.map",
+    "main.b7c73b9c.js.map": "/ourportfolio/static/js/main.b7c73b9c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4cbb221.css",
+    "static/js/main.b7c73b9c.js"
+  ]
+}
