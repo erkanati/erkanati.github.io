@@ -10,26 +10,22 @@ import Footer from './components/Footer/Footer';
 import './App.css';
 import React from 'react';
 
-// Google Analytics (optional)
-if (typeof process.env.REACT_APP_TRACKING_ID !== 'undefined') {
-    ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
-}
-
 function App() {
-    return (
-        <Router>
-            <NavBar />
-            <Container sx={{ flex: 1, py: 3 }}>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/projects" element={<Projects />} />
-                    <Route path="/blogs" element={<Blogs />} />
-                    <Route path="/skills" element={<Skills />} />
-                </Routes>
-            </Container>
-            <Footer />
-        </Router>
-    );
+  return (
+    <Router>
+      <NavBar />
+      <Container sx={{ flex: 1, py: 3 }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/skills" element={<Skills />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;
+
