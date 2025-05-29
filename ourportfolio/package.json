@@ -1,7 +1,7 @@
 {
   "name": "ourportfolio",
   "version": "0.1.0",
-  "homepage": "https://iamerkanat.github.io/portfolio",
+  "homepage": "https://erkanati.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
