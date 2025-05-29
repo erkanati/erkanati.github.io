@@ -8,6 +8,7 @@ import Skills from './pages/Skills/Skills';
 import Blogs from './pages/Blogs';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import { HashRouter } from 'react-router-dom';
 
 import React from 'react';
 //r
@@ -17,7 +18,7 @@ if (typeof process.env.REACT_APP_TRACKING_ID !== 'undefined') {
 
 function App() {
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <HashRouter>
             <Router>
                 <NavBar />
                 <Container sx={{ flex: 1, py: 3 }}>
@@ -30,7 +31,8 @@ function App() {
                 </Container>
                 <Footer />
             </Router>
-        </Box>
+        </HashRouter>
+        
     );
 };
 
