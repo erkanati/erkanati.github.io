@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
 import { Box, Container } from '@mui/material';
 import ReactGA from 'react-ga';
 import NavBar from './components/NavBar/NavBar';
@@ -9,21 +9,19 @@ import Blogs from './pages/Blogs';
 import Footer from './components/Footer/Footer';
 import './App.css';
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <Router>
-      <NavBar />
-      <Container sx={{ flex: 1, py: 3 }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/skills" element={<Skills />} />
-        </Routes>
-      </Container>
-      <Footer />
-    </Router>
+    <Router basename="/erkanati.github.io">
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/projects" element={<Projects />} />
+    <Route path="/blogs" element={<Blogs />} />
+    <Route path="/skills" element={<Skills />} />
+  </Routes>
+</Router>
   );
 }
 
