@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Team 45</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+/>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0; padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #282c34;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+    }
+    .team-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .member {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .member:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .member img {
+      width: 180px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      flex-shrink: 0;
+    }
+    .member-info {
+      flex: 1;
+    }
+    .member-info h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.3rem;
+      color: #282c34;
+    }
+    .member-info p {
+      margin: 0 0 0.75rem;
+      line-height: 1.4;
+    }
+    .links a {
+      text-decoration: none;
+      color: #0077b5; /* LinkedIn blue */
+      font-weight: bold;
+      margin-right: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 1rem;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #282c34;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    .navbar {
+  background-color: #20232a;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a i {
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  color: #61dafb;
+}
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+  <a href="home.html"><i class="bi bi-house-fill"></i><span>Home</span></a>
+  <a href="project.html"><i class="bi bi-github"></i><span>Project</span></a>
+  <a href="about.html"><i class="bi bi-medium"></i><span>About</span></a>
+  <a href="diploma.html"><i class="bi bi-code-slash"></i><span>Diploma</span></a>
+</nav>
+  <header>
+    <h1>We are Team 45</h1>
+    <p>Learn more about our team members and their roles</p>
+  </header>
+
+  <main class="team-container">
+    <section class="member">
+      <img src="https://via.placeholder.com/700x400?text=Erkanat" alt="Erkanat" />
+      <div class="member-info">
+        <h2>Erkanat – Team Lead & Backend Developer</h2>
+        <p>Erkanat leads the team with deep backend expertise and DevSecOps knowledge, ensuring the team delivers robust and secure solutions.</p>
+        
+      </div>
+    </section>
+
+    <section class="member">
+      <img src="https://via.placeholder.com/700x400?text=Dilnaz" alt="Dilnaz" />
+      <div class="member-info">
+        <h2>Dilnaz – Frontend Developer & UI/UX Specialist</h2>
+        <p>Dilnaz designs seamless user experiences and builds responsive frontends with React, CSS, and JavaScript.</p>
+        
+      </div>
+    </section>
+
+    <section class="member">
+      <img src="https://via.placeholder.com/700x400?text=Spartak" alt="Spartak" />
+      <div class="member-info">
+        <h2>Spartak – DevSecOps Engineer & Infrastructure Expert</h2>
+        <p>Spartak ensures secure, efficient, and scalable infrastructure using Docker, Terraform, and modern DevOps practices.</p>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Team 45 - IITU</p>
+  </footer>
+</body>
+</html>
